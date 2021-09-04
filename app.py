@@ -16,8 +16,13 @@ def api1():
     data = {"name":"Trump", "Cities":["New York", "Washington"]}
     return jsonify(data)
 
-print(__name__)
+@applic.route("/api2", methods=["POST"])
+def api2():
+    data = {"name":"Trump", "Cities":["New York", "Washington"]}
+    return jsonify(data)
+
+#print(__name__)
 if __name__ == "__main__":
-    print("in app.py")
-    print(__name__)
+#    print("in app.py")
+#    print(__name__)
     applic.run()
